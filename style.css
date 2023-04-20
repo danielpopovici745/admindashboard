@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
-  background-color: #393646;
+  background-color: #020617;
   width: 100vw;
   height: 100vh;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  text-decoration: none;
 }
 
 .wrapper{
@@ -19,10 +24,75 @@ body{
 
 .header{
   grid-area: header;
-  background-color: #4F4557;
+  background-color: #0f172a;
 }
 
 .sidebar{
-  background-color: #6D5D6E;
+  background-color: #1e3a8a;
   grid-area: sidebar;
+}
+.sidebar-list{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px repeat(2,min-content);
+  grid-template-areas: 
+    "title"
+    "options1"
+    "options2";
+  height: 100%;
+  gap: 50px;
+  justify-items: left;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.sidebar-list span,a{
+  color: #f1f5f9;
+}
+.sidebar-title{
+  grid-area: title;
+  display: grid;
+  grid-template-columns: repeat(2,min-content);
+  align-items: center;
+  justify-items: left;
+  gap: 20px;
+}
+.sidebar-title > span{
+  font-size: 36px;
+  font-weight: 900;
+}
+.dashboard-icon{
+  width: 50px;
+  height: auto;
+}
+
+.dash-menu1{
+  grid-area: options1;
+  display: grid;
+  grid-template-columns: 50px min-content;
+  grid-template-rows: min-content;
+  justify-items: left;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 900;
+  gap: 20px;
+}
+
+.dash-menu1 img, .dash-menu2 img {
+  justify-self: center;
+  width: 35px;
+  height: 35px;
+  color: #020617;
+}
+
+.dash-menu2{
+  grid-area: options2;
+  display: grid;
+  grid-template-columns: 50px min-content;
+  grid-template-rows: min-content;
+  justify-items: left;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 900;
+  gap: 20px;
 }
