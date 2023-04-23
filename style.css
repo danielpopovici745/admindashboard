@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+html,body{
+  background:#020617;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 body{
-  background-color: #020617;
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -24,7 +28,7 @@ a{
 
 .header{
   grid-area: header;
-  background-color: #0f172a;
+  background: #0f172a;
 }
 
 .header-wrap{
@@ -122,6 +126,8 @@ a,span{
   align-items: center;
   justify-items: left;
   gap: 20px;
+  width: 100%;
+  padding-right: 20px;
 }
 .sidebar-title > span{
   font-size: 36px;
