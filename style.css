@@ -40,9 +40,8 @@ a{
   grid-template-areas: 
     "search notif-name"
     "welcome create";
-  gap: 20px;
-  justify-content: center;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .searchbar{
@@ -51,9 +50,11 @@ a{
   grid-template-columns: min-content 500px;
   grid-template-rows: min-content;
   justify-content: center;
+  width: fit-content;
+  justify-self: center;
   align-items: center;
   gap: 20px;
-  padding-left: 20px;
+  /* padding-left: 80px; */
 }
 
 input[type=text]{
@@ -76,11 +77,11 @@ input[type=text]{
 
 .notif-name{
   display: grid;
-  grid-template-columns: min-content min-content min-content;
+  grid-template-columns: min-content min-content;
   grid-area: notif-name;
-  justify-content: right;
+  justify-content: end;
   align-items: center;
-  gap: 20px;
+  column-gap: 20px;
   padding-right: 80px;
 }
 
@@ -88,14 +89,49 @@ input[type=text]{
   width: 30px;
   height: 30px;
 }
-.profile-picture{
-  width: 40px;
-  height: 40px;
-}
 
 .profile-name{
   font-size: 24px;
   white-space: nowrap;
+}
+
+.welcome{
+  grid-area: welcome;
+  display: grid;
+  grid-template-areas: 
+    "picture message";
+  grid-template-columns: min-content 455px;
+  grid-template-rows: min-content;
+  justify-self: center;
+  column-gap: 20px;
+  width: fit-content;
+  align-items: center;
+}
+.welcome-msg-grid{
+  display: grid;
+  grid-template-areas: 
+    "welcomemsg"
+    "name";
+  grid-template-columns: min-content;
+  grid-template-rows: 20px min-content;
+  align-self: center;
+}
+.welcome-message{
+  grid-area: welcomemsg;
+  align-self: start;
+  font-size: 16px;
+}
+.welcome-name{
+  grid-area: name;
+  margin: 0px;
+  padding: 0px;
+  font-weight: 600;
+  font-size: 32px;
+  white-space: nowrap;
+}
+.profile-picture{
+  width: 80px;
+  height: 80px;
 }
 .sidebar{
   background-color: #1e3a8a;
