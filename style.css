@@ -70,6 +70,29 @@ input[type=text]{
   height: 35px;
 }
 
+.notif-name{
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  grid-area: notif-name;
+  justify-content: right;
+  align-items: center;
+  gap: 20px;
+  padding-right: 80px;
+}
+
+.notif-bell{
+  width: 30px;
+  height: 30px;
+}
+.profile-picture{
+  width: 40px;
+  height: 40px;
+}
+
+.profile-name{
+  font-size: 24px;
+  white-space: nowrap;
+}
 .sidebar{
   background-color: #1e3a8a;
   grid-area: sidebar;
@@ -89,7 +112,7 @@ input[type=text]{
   padding-left: 20px;
 }
 
-.sidebar-list span,a{
+a,span{
   color: #f1f5f9;
 }
 .sidebar-title{
