@@ -3,12 +3,13 @@ html,body{
   background:#020617;
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: 'Roboto', sans-serif
 }
 body{
   width: 100vw;
   height: 100vh;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  ;
 }
 a{
   text-decoration: none;
@@ -54,20 +55,23 @@ a{
   justify-self: center;
   align-items: center;
   gap: 20px;
-  /* padding-left: 80px; */
 }
 
 input[type=text]{
-  outline: none;
-  margin: none;
-  border: none;
-  padding: 0px;
-  text-decoration: none;
   border-radius: 50px;
   height: 35px;
   color: #020617;
   padding-left: 10px;
   font-size: 16px;
+  
+}
+button,input[type=text]{
+  outline: none;
+  margin: none;
+  border: none;
+  padding: 0px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif
 }
 
 .searchbar > img{
@@ -133,6 +137,32 @@ input[type=text]{
   width: 80px;
   height: 80px;
 }
+
+.create{
+  grid-area: create;
+  display: grid;
+  grid-template-columns: repeat(3,min-content);
+  justify-self: end;
+  padding-right: 80px;
+  gap: 20px;
+}
+.create > button{
+  background: #1e3a8a;
+  cursor: pointer;
+  color: #f1f5f9;
+  font-size: 20px;
+  width: 150px;
+  padding: 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 8px #020617;
+}
+.create > button:active{
+  background: #1e3b8ad8;
+  transform: translateY(3px);
+  box-shadow: 0 5px #000000;
+}
+
 .sidebar{
   background-color: #1e3a8a;
   grid-area: sidebar;
