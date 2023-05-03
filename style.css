@@ -240,7 +240,7 @@ a,span{
 
 .content{
   display: grid;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 30px 30px 30px;
   grid-template-columns: 2.5fr 1fr;
   grid-template-rows: min-content 1fr;
   grid-template-areas: 
@@ -251,6 +251,7 @@ a,span{
 }
 .content-title{
   font-size: 24px;
+  font-weight: 900;
 }
 
 .projects{
@@ -308,8 +309,9 @@ a,span{
 .announcements{
   display: flex;
   flex-direction: column;
+  height: 40%;
   gap: 20px;
-  padding: 40px;
+  padding: 30px;
   align-content: center;
   background-color: #dadada;
   border-radius: 8px;
@@ -328,4 +330,41 @@ hr{
   border:solid 1px;
   width: 100%;
   color: #1e3b8a70;
+}
+.trending{
+  background: #dadada;
+  height: 40%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 30px;
+  gap: 20px;
+  border-radius: 8px;
+}
+.trending img{
+  width: 60px;
+  height: 60px;
+}
+
+.trend{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.trend-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.trend-user{
+  color: #000000;
+  font-weight: 800;
+  font-size: 20px;
+}
+.trend-name{
+  color: #3e3e3e;
+  font-size: 16px;
 }
