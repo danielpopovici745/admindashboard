@@ -299,9 +299,33 @@ a,span{
   width: 35px;
   height: 35px;
 }
-.announcements{
+.aside{
   grid-area: aside;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.announcements{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  align-content: center;
+  background-color: #dadada;
+  border-radius: 8px;
+  box-shadow: 0px 10px 5px #000000;
+}
+.announcement-title{
+  color: #000000;
+  font-size: 18px;
+  font-weight: 800;
+}
+.announcement-text{
+  color: #3e3e3e;
+  font-size: 14px;
+}
+hr{
+  border:solid 1px;
+  width: 100%;
+  color: #1e3b8a70;
 }
