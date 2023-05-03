@@ -68,9 +68,9 @@ input[type=text]{
   background: #dadada;
 }
 button,input[type=text]{
-  outline: none;
+  outline: 0px;
   margin: 0px;
-  border: none;
+  border: 0px;
   padding: 0px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
@@ -274,8 +274,8 @@ a,span{
   justify-content: center;
   align-content: center;
   background-color: #dadada;
-  border-radius: 10px;
-  box-shadow: 0px 10px 5px #000000,inset 5px 0px #1e3a8a;
+  border-radius: 8px;
+  box-shadow: 0px 10px 5px #000000,inset 8px 0px #1e3a8a;
 }
 
 .project > p{
