@@ -68,9 +68,9 @@ input[type=text]{
   background: #dadada;
 }
 button,input[type=text]{
-  outline: none;
+  outline: 0px;
   margin: 0px;
-  border: none;
+  border: 0px;
   padding: 0px;
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
@@ -240,16 +240,18 @@ a,span{
 
 .content{
   display: grid;
-  padding: 40px 20px 20px 20px;
-  grid-template-columns: 3fr 1fr;
+  padding: 40px 30px 30px 30px;
+  grid-template-columns: 2.5fr 1fr;
   grid-template-rows: min-content 1fr;
   grid-template-areas: 
     "header header"
     "projects aside";
   row-gap: 20px;
+  column-gap: 60px;
 }
 .content-title{
   font-size: 24px;
+  font-weight: 900;
 }
 
 .projects{
@@ -257,6 +259,7 @@ a,span{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3,1fr);
+  gap: 60px;
 }
 
 .project-title{
@@ -270,18 +273,19 @@ a,span{
   display: grid;
   grid-template-columns: .8fr;
   grid-template-rows: repeat(3,min-content);
-  margin: 40px;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-content: center;
   background-color: #dadada;
-  border-radius: 10px;
-  box-shadow: 0px 10px 5px #000000,inset 5px 0px #1e3a8a;
+  border-radius: 8px;
+  box-shadow: 0px 10px 5px #000000,inset 8px 0px #1e3a8a;
 }
 
 .project > p{
   color: #3e3e3e;
   font-size: 18px;
-  width: 70%;
+  width: 90%;
 }
 .iconwrapper{
   display: flex;
@@ -295,4 +299,72 @@ a,span{
 .share{
   width: 35px;
   height: 35px;
+}
+.aside{
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.announcements{
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  gap: 20px;
+  padding: 30px;
+  align-content: center;
+  background-color: #dadada;
+  border-radius: 8px;
+  box-shadow: 0px 10px 5px #000000;
+}
+.announcement-title{
+  color: #000000;
+  font-size: 18px;
+  font-weight: 800;
+}
+.announcement-text{
+  color: #3e3e3e;
+  font-size: 14px;
+}
+hr{
+  border:solid 1px;
+  width: 100%;
+  color: #1e3b8a70;
+}
+.trending{
+  background: #dadada;
+  height: 40%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 30px;
+  gap: 20px;
+  border-radius: 8px;
+}
+.trending img{
+  width: 60px;
+  height: 60px;
+}
+
+.trend{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.trend-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.trend-user{
+  color: #000000;
+  font-weight: 800;
+  font-size: 20px;
+}
+.trend-name{
+  color: #3e3e3e;
+  font-size: 16px;
 }
