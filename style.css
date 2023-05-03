@@ -241,12 +241,13 @@ a,span{
 .content{
   display: grid;
   padding: 40px 20px 20px 20px;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
   grid-template-rows: min-content 1fr;
   grid-template-areas: 
     "header header"
     "projects aside";
   row-gap: 20px;
+  column-gap: 60px;
 }
 .content-title{
   font-size: 24px;
@@ -257,6 +258,7 @@ a,span{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3,1fr);
+  gap: 60px;
 }
 
 .project-title{
@@ -270,7 +272,8 @@ a,span{
   display: grid;
   grid-template-columns: .8fr;
   grid-template-rows: repeat(3,min-content);
-  margin: 40px;
+  width: 100%;
+  height: 100%;
   justify-content: center;
   align-content: center;
   background-color: #dadada;
@@ -295,4 +298,10 @@ a,span{
 .share{
   width: 35px;
   height: 35px;
+}
+.announcements{
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
